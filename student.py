@@ -1,25 +1,23 @@
-# Student Marks Calculator
+print("student Marksheet")
 
-name = input("Enter student name: ")
+name = input("Enter student Name:")
+rollno = input("Enter student rollno:")
+CollageName = input("Enter CollageName:")
 
-maths = int(input("Enter Maths marks: "))
-python = int(input("Enter Python marks: "))
-english = int(input("Enter English marks: "))
+maths = float(input("Enter maths mark:"))
+English = float(input("Enter English mark:"))
+science = float(input("Enter Science marks:"))
+Hindi = float(input("Enter Hindi mark:"))
+Gujrati = float(input("Enter Gujrati mark:"))
 
-total = maths + python + english
-percentage = total / 3
+total = maths + English + science + Hindi + Gujrati
+persentage = total / 5
 
-if percentage >= 75:
-    grade = "A"
-elif percentage >= 60:
-    grade = "B"
-elif percentage >= 40:
-    grade = "C"
-else:
-    grade = "F"
+print("\n Marksheet ")
+print("Name:",name)
+print("maths:",maths)
+print("English:",English)
+print("Science:",science)
+print("Hindi:",Hindi)
+print("Gujrati:",Gujrati)
 
-print("\n--- Student Result ---")
-print(f"Student Name : {name}")
-print(f"Total Marks  : {total}")
-print(f"Percentage   : {percentage:.2f}%")
-print(f"Grade        : {grade}")
