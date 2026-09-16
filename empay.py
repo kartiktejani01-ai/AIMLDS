@@ -1,4 +1,3 @@
-
 def calculate_salary(basic, bonus, deduction):
     salary = basic + bonus - deduction
     return salary
